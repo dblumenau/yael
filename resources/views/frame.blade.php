@@ -43,7 +43,6 @@
     <script type="text/javascript" src="{{asset('assets/js/libs/modernizr.min.js')}}"></script>
 
     </head>
-@yield('content')
     <body data-spy="scroll" data-target="#main-nav" data-offset="200">
 
     <!--=== PAGE PRELOADER ===-->
@@ -265,7 +264,7 @@
 
                 <div class="col-sm-6 scrollimation fade-right d1">
 
-                    <img class="img-responsive polaroid" src="{{asset('assets/images/child.jpg')}}" alt="" />
+                    <img class="img-responsive polaroid" src="{{asset('assets/images/who.jpg')}}" alt="" />
 
                 </div>
 

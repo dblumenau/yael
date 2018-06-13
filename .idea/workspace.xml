@@ -2,24 +2,15 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/resources/views/frame.blade.php" />
-    <bookmark url="file://$PROJECT_DIR$/resources/views/frame.blade.php" line="129" />
-    <bookmark url="file://$PROJECT_DIR$/resources/views/frame.blade.php" line="566" />
+    <bookmark url="file://$PROJECT_DIR$/resources/views/frame.blade.php" line="128" />
+    <bookmark url="file://$PROJECT_DIR$/resources/views/frame.blade.php" line="565" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27194806-c62e-40ee-b637-dea5e411b570" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/child.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/header-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frame.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frame.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -54,24 +45,14 @@
       <file leaf-file-name="frame.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/frame.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="222" column="92" selection-start-line="222" selection-start-column="92" selection-end-line="222" selection-end-column="92" />
+            <state relative-caret-position="855">
+              <caret line="266" column="88" selection-start-line="266" selection-start-column="88" selection-end-line="266" selection-end-column="88" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -85,14 +66,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>header-bg</find>
       <find>header-b</find>
-      <find>h1</find>
       <find>fon</find>
+      <find>cont</find>
+      <find>h1</find>
+      <find>qualified</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,9 +93,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/public/assets/css/styles-9.css" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/frame.blade.php" />
       </list>
     </option>
@@ -205,7 +198,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
-    <option name="width" value="1943" />
+    <option name="width" value="2036" />
     <option name="height" value="2102" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -326,12 +319,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528913103949</updated>
-      <workItem from="1528913105134" duration="7716000" />
+      <workItem from="1528913105134" duration="8922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7716000" />
+    <option name="totallyTimeSpent" value="8922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1110" height="1201" extended-state="0" />
@@ -377,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/assets/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -411,6 +397,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/styles-9.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
@@ -418,22 +411,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="152">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frame.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="222" column="92" selection-start-line="222" selection-start-column="92" selection-end-line="222" selection-end-column="92" />
+        <state relative-caret-position="855">
+          <caret line="266" column="88" selection-start-line="266" selection-start-column="88" selection-end-line="266" selection-end-column="88" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
