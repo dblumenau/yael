@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('frame');
 });
+Route::post('contact', 'ContactController@store');

@@ -557,10 +557,21 @@
         <div class="container text-center">
 
             <div class="row">
-
+                <div class="alert alert-success" id="success_message" style="display:none">
+                    <p>Thank you for contacting me. I will respond as soon as I can.</p>
+                </div>
                 <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
 
                     <h1 class="big-text">Contact Yael</h1>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <br>
                     <br>
                     <img style="margin-left: 50px; transform: rotate(0deg);" class="img-responsive polaroid" src="{{asset('assets/images/Yael-Gavronsky-Logo-final.jpg')}}" alt="">
@@ -572,8 +583,8 @@
 
                 <!--=== Contact Form ===-->
 
-                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="/contact" method="POST" novalidate>
+@csrf
                     <div class="form-group">
                         <label class="control-label" for="contact-name">Name</label>
                         <div class="controls">
@@ -599,7 +610,6 @@
                     </div><!-- End textarea -->
 
                     <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                    <input type="hidden" name="submitted" id="submitted" value="true" />
 
                 </form><!-- End contact-form -->
 

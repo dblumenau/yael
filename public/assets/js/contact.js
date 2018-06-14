@@ -38,12 +38,13 @@ $(document).ready(function() {
 			var formInput = $(this).serialize();
 			$.post($(this).attr('action'),formInput, function(data){
 				$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
-				
+				$('#success_message').show();
 				$('#contact-form')[0].reset();
 				
 				setTimeout(function(){
 					$('#contact-form button').html(buttonCopy);
-				},2000);
+                    $('#success_message').hide();
+				},5000);
 				
 			});
 		}
