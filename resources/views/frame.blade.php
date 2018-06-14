@@ -574,7 +574,7 @@
                     @endif
                     <br>
                     <br>
-                    <img style="margin-left: 50px; transform: rotate(0deg);" class="img-responsive polaroid" src="{{asset('assets/images/Yael-Gavronsky-Logo-final.jpg')}}" alt="">
+                    <img id="business_card" style="transform: rotate(0deg);" class="img-responsive polaroid" src="{{asset('assets/images/Yael-Gavronsky-Logo-final.jpg')}}" alt="">
                     {{--<p class="lead">I am available for freelance. Can't wait for the next exciting project! Could be yours?</p>--}}
 
                     {{--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>--}}
