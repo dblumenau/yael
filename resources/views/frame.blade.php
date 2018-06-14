@@ -172,7 +172,7 @@
 
                     <h1 class="big-text">About Yael</h1>
 
-                    <p class="lead">Yael is a registered Music Therapist with the Health Professionals Council of South Africa (HPCSA) and Board of Health Care Funders (BHF). She received her B.A (Honours) in Psychology and Music from the University of Albany in New York.</p>
+                    <p class="lead">Yael is a registered Music Therapist with the Health Professionals Council of South Africa (HPCSA) and Board of Health Care Funders (BHF). She received her B.A (Honours) in Psychology and Music from the University of Albany in New York, and Masters in Music Therapy (MMUS) at the University of Pretoria</p>
                     <p> After living in the United States since the age of ten, Yael decided it was time for a change of scenery (and weather) and moved back to her home country of South Africa. While living in New York, Yael worked as Director of Teen Programming at the JCC in Manhattan, a world renowned non-profit organization (NGO) located on the Upper West Side of New York City. As Director of Teen Programming, Yael served as a mentor and counselor to many students and their families. She created a diverse array of health, art and music classes to meet the needs of the community. </p>
                     <p>Yael is currently providing individual and group Music Therapy services in the Johannesburg area. Yael believes that her job as a Music Therapist is to awaken possibility in other people. Yael is committed to giving a voice to those who cannot express themselves and believes that music, when used as a means to communicate, can serve as an exceptionally powerful force for change.
                     </p>
@@ -668,21 +668,21 @@
     <script src="{{asset('assets/js/contact.js')}}"></script>
     <script src="{{asset('assets/js/scripts.js')}}"></script>
 
-    <script>
+    {{--<script>--}}
 
-        var mapPoint = {
-            'lat': 40.720099,
-            'lng': -74.005764,
-            'zoom' : 15,
-            'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
-            'linkText':'View on Google Maps',
-            'mapAddress':'250 W Broadway, New York, NY 10013',
-            'icon': 'assets/images/pin-dark.png'
-        };
+        {{--var mapPoint = {--}}
+            {{--'lat': 40.720099,--}}
+            {{--'lng': -74.005764,--}}
+            {{--'zoom' : 15,--}}
+            {{--'infoText':'<p>250 W Broadway\--}}
+								{{--<br/>New York\--}}
+								{{--<br/>NY 10013</p>',--}}
+            {{--'linkText':'View on Google Maps',--}}
+            {{--'mapAddress':'250 W Broadway, New York, NY 10013',--}}
+            {{--'icon': 'assets/images/pin-dark.png'--}}
+        {{--};--}}
 
-    </script>
+    {{--</script>--}}
 
     </body>
 

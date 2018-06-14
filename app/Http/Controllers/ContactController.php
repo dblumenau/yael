@@ -46,7 +46,7 @@ class ContactController extends Controller
 	    $contact = new Contact($request->all());
 	    $contact->save();
 //	    return response(200);
-	    Mail::to('dblumenau@gmail.com')->send(new NewContact($contact));
+	    Mail::to('dblumenau@gmail.com', 'yael.gavronsky@gmail.com')->send(new NewContact($contact));
 	    return redirect()->back()->with('success', 'Thank you for contacting me. I will respond as soon as I can.');
     }
 
