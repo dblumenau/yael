@@ -31,8 +31,9 @@ set +a
 cd "$RELEASE_DIR"
 bun install --frozen-lockfile
 bun run deploy:cloudflare
-curl -fsS --retry 5 --retry-delay 3 --max-time 20 "$SITE/api/health" | python3 -c 'import json,sys; assert json.load(sys.stdin)["ok"]'
-curl -fsS --max-time 20 "$SITE/" | grep -q 'Yael Music Therapy'
+# A first deploy to a new custom domain waits on certificate issuance, so retry connection errors too.
+curl -fsS --retry 12 --retry-delay 5 --retry-all-errors --max-time 20 "$SITE/api/health" | python3 -c 'import json,sys; assert json.load(sys.stdin)["ok"]'
+curl -fsS --retry 3 --retry-all-errors --max-time 20 "$SITE/" | grep -q 'Yael Music Therapy'
 ln -sfn "$RELEASE_DIR" "$RUN_DIR/current.tmp"
 mv -Tf "$RUN_DIR/current.tmp" "$RUN_DIR/current"
 ls -dt "$RUN_DIR"/releases/*/ | tail -n +4 | xargs -r rm -rf
