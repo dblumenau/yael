@@ -589,6 +589,10 @@
                 <!--=== Contact Form ===-->
 
                 <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="/api/contact" method="POST" novalidate>
+                    <div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+                        <label for="contact-website">Leave this field empty</label>
+                        <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
 
                     <div class="form-group">
                         <label class="control-label" for="contact-name">Name</label>

@@ -43,7 +43,8 @@ $(document).ready(function() {
 				data: JSON.stringify({
 					contactName: $('#contact-name').val(),
 					email: $('#contact-mail').val(),
-					comments: $('#contact-message').val()
+					comments: $('#contact-message').val(),
+					website: $('#contact-website').val()
 				}),
 				success: function() {
 					$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);

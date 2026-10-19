@@ -1,5 +1,5 @@
 import { DurableObject } from "cloudflare:workers";
-import { parseContact, type ContactInput } from "./contact";
+import { isHoneypot, parseContact, type ContactInput } from "./contact";
 
 interface Env {
   ASSETS: Fetcher;
@@ -63,6 +63,7 @@ export default {
       } catch {
         return json({ errors: ["Invalid request"] }, 400);
       }
+      if (isHoneypot(body)) return json({ ok: true }, 201);
       const parsed = parseContact(body);
       if (!parsed.ok) return json({ errors: parsed.errors }, 422);
       await db().add(parsed.value);

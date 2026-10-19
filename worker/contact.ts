@@ -18,3 +18,9 @@ export function parseContact(body: unknown): { ok: true; value: ContactInput } |
   if (!comments || comments.length > 2000) errors.push("Please enter a message of up to 2000 characters");
   return errors.length ? { ok: false, errors } : { ok: true, value: { contactName, email, comments } };
 }
+
+/** A filled hidden "website" field marks a bot: the Worker acknowledges it and stores nothing. */
+export function isHoneypot(body: unknown): boolean {
+  const website = (body && typeof body === "object" ? (body as Record<string, unknown>).website : "") ?? "";
+  return typeof website === "string" ? website.trim() !== "" : true;
+}

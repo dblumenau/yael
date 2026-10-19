@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseContact } from "../worker/contact";
+import { isHoneypot, parseContact } from "../worker/contact";
 
 describe("parseContact", () => {
   it("accepts a complete submission and trims it", () => {
@@ -14,5 +14,17 @@ describe("parseContact", () => {
   it("rejects a message over 2000 characters and non-object bodies", () => {
     expect(parseContact({ contactName: "A", email: "a@b.co", comments: "x".repeat(2001) }).ok).toBe(false);
     expect(parseContact(null).ok).toBe(false);
+  });
+});
+
+describe("isHoneypot", () => {
+  it("passes an empty or absent website field", () => {
+    expect(isHoneypot({ contactName: "A" })).toBe(false);
+    expect(isHoneypot({ website: "" })).toBe(false);
+    expect(isHoneypot({ website: "   " })).toBe(false);
+  });
+  it("flags any filled or non-string website field", () => {
+    expect(isHoneypot({ website: "http://spam.example" })).toBe(true);
+    expect(isHoneypot({ website: 1 })).toBe(true);
   });
 });
