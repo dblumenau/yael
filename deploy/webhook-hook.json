@@ -1,0 +1,29 @@
+{
+  "id": "yaelmusictherapy-deploy",
+  "execute-command": "/home/david/bin/deploy-run",
+  "pass-arguments-to-command": [
+    { "source": "string", "name": "yaelmusictherapy" },
+    { "source": "string", "name": "/home/david/yaelmusictherapy/scripts/deploy-webhook.sh" },
+    { "source": "payload", "name": "ref" }
+  ],
+  "command-working-directory": "/home/david/yaelmusictherapy",
+  "response-message": "Yael Music Therapy deploy triggered",
+  "trigger-rule": {
+    "and": [
+      {
+        "match": {
+          "type": "payload-hmac-sha256",
+          "secret": "<set on Hetzner>",
+          "parameter": { "source": "header", "name": "X-Hub-Signature-256" }
+        }
+      },
+      {
+        "match": {
+          "type": "regex",
+          "regex": "^refs/tags/v.*$",
+          "parameter": { "source": "payload", "name": "ref" }
+        }
+      }
+    ]
+  }
+}

@@ -35,20 +35,35 @@ $(document).ready(function() {
 		else {
 			$('#contact-form button').html('<i class="fa fa-spinner fa-spin"></i>'+sendingMessage);
 			
-			var formInput = $(this).serialize();
-			$.post($(this).attr('action'),formInput, function(data){
-				$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
-				$('#success_message').show();
-				$('#contact-form')[0].reset();
-				
-				setTimeout(function(){
-					$('#contact-form button').html(buttonCopy);
-                    $('#success_message').hide();
-				},5000);
-				
+			var form = this;
+			$.ajax({
+				url: $(form).attr('action'),
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					contactName: $('#contact-name').val(),
+					email: $('#contact-mail').val(),
+					comments: $('#contact-message').val()
+				}),
+				success: function() {
+					$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
+					$('#success_message').show();
+					form.reset();
+
+					setTimeout(function(){
+						$('#contact-form button').html(buttonCopy);
+						$('#success_message').hide();
+					},5000);
+				},
+				error: function() {
+					$('#contact-form button').html('<i class="fa fa-times"></i>'+errorMessage);
+					setTimeout(function(){
+						$('#contact-form button').html(buttonCopy);
+					},2000);
+				}
 			});
 		}
-		
+
 		return false;	
 	});
 });
